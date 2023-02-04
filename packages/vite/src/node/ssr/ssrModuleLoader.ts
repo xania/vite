@@ -191,7 +191,7 @@ async function instantiateModule(
       ssrImportKey,
       ssrDynamicImportKey,
       ssrExportAllKey,
-      '"use strict";' + result.code + `\n//# sourceURL=${mod.url}`,
+      '"use strict";' + result.code + `\n//# sourceURL=${mod.file}`,
     )
     await initModule(
       context.global,
